@@ -50,7 +50,7 @@ i18n.configure({
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`${PREFIX}help | Server ${HARDE UP}', { type: "LISTENING" });
+  client.user.setActivity(`${PREFIX}help | server ${client.guilds.cache.size}`, { type: "PLAYING" });
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
